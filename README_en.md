@@ -61,6 +61,8 @@ You can also switch with `/qol on | host | solo | off`. This value alone is not 
 **\<General\>**
 * Hold to repeat-cast magic
 * Hold to repeat special attack
+* Hold to keep dashing
+* Prefer dash attacks while holding dash
 * Expand preset slots to 100
 * Put the talent mirror in town
 
@@ -124,6 +126,8 @@ Only the settings you are currently using are exported. The nine slots are not i
 
 ### Other Convenience Features
 * **Auto-Cast Magic/Special Attacks:** Hold down the input for magic or an activatable artifact to cast it automatically whenever its cooldown ends. (Includes instant special attacks.)
+* **Hold to Keep Dashing:** Hold the dash key and you keep dashing instead of breaking into a run. No more mashing the key on `Infinite Dash` or dash-attack builds. It does nothing when you are out of dashes, and running stays off while this is on.
+* **Prefer Dash Attacks While Holding Dash:** A sub-option that only appears once the entry above is on. In the base game, spamming dash while holding left click makes a **basic attack** come out mid-dash instead of a dash attack. With this on, one extra left click is sent at the start of every dash so the dash attack gets the first shot. Every resource and cooldown the game checks still applies, so a basic attack still comes out when the weapon will not give you a dash attack. (Bow, staff and golem weapons are excluded.)
 * **Journal Search:** Search for entries by name in the journal.
 
 <img width="584" height="81" alt="image" src="https://github.com/user-attachments/assets/7cc5a8d5-5999-4c09-9007-d86bc5fb9b58" />

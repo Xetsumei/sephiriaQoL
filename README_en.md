@@ -1,12 +1,14 @@
 # Sephiria QoL Mod
 
+1.38.0 makes the key-binding rows behave exactly like the game's own `Keyboard` options tab. It also carries everything added in 1.34.0-1.37.0: rooms hidden from players without the mod, the remaining level-up picks counter, merged EXP orbs, separate level-up/potion keys, ignoring the game's zoom effects, and the performance work. Existing settings and run history carry over.
+
 **Sephiria QoL** is a comprehensive mod that adds various **quality-of-life features, difficulty adjustments, and other cheat-like features** not natively supported by Sephiria. It is designed for single-player or **multiplayer with other users of the same QoL mod**.
 
 When all features are disabled, the game is designed to behave exactly like the vanilla version.
 
 > **Multiplayer Notice**
 > Because the QoL mod includes cheat-like features, using it indiscriminately in multiplayer may be considered hacking. With every feature turned on, **multiplayer with vanilla users is restricted by default**.
-> * **When you are the host:** The room title is prefixed with `[QoL]`, and vanilla users are automatically kicked if they join.
+> * **When you are the host:** A `[QoL]` marker is appended to the game version, so **your room simply does not appear in the room list of anyone without the mod.** Vanilla users who get in without going through the list (invites, reconnects) are kicked automatically.
 > * **When you are a guest:** If you join a vanilla host's room, you automatically leave after 10 seconds.
 > * If you want to play with vanilla users, use the **Convenience only** or **Convenience + host** modes described below. Neither is restricted.
 
@@ -128,6 +130,9 @@ Only the settings you are currently using are exported. The nine slots are not i
 * **Auto-Cast Magic/Special Attacks:** Hold down the input for magic or an activatable artifact to cast it automatically whenever its cooldown ends. (Includes instant special attacks.)
 * **Hold to Keep Dashing:** Hold the dash key and you keep dashing instead of breaking into a run. No more mashing the key on `Infinite Dash` or dash-attack builds. It does nothing when you are out of dashes, and running stays off while this is on.
 * **Prefer Dash Attacks While Holding Dash:** A sub-option that only appears once the entry above is on. In the base game, spamming dash while holding left click makes a **basic attack** come out mid-dash instead of a dash attack. With this on, one extra left click is sent at the start of every dash so the dash attack gets the first shot. Every resource and cooldown the game checks still applies, so a basic attack still comes out when the weapon will not give you a dash attack. (Bow, staff and golem weapons are excluded.)
+* **Separate the level-up and potion keys:** The game puts "open the level-up window" and "drink a potion" on one key (`R`). The condition is "not in battle and a reward is still pending", so **once a fight ends while you have postponed a level-up reward, you cannot drink a potion at all.** Turning this on reveals two key rows below it.
+  * If you bind a potion key, the game's original key does nothing. If you leave it unbound, the original key keeps drinking as before.
+  * The key rows behave **exactly like the game's own `Keyboard` options tab**: click a row, `Press a key` appears, and the next key you press is bound. `ESC` backs out. (A key the game already uses will fire both, so pick a free one.)
 * **Journal Search:** Search for entries by name in the journal.
 
 <img width="584" height="81" alt="image" src="https://github.com/user-attachments/assets/7cc5a8d5-5999-4c09-9007-d86bc5fb9b58" />
@@ -176,6 +181,7 @@ From `x25` up the value is shown in red and a lag warning appears when you apply
 * **Revive Speed Multiplier:** Adjusts the speed at which teammates are revived in multiplayer from 0.1x ~ 10x.
 * **Leaf / EXP Gain Multipliers:** Adjustable from x0.1 to x20.0 in steps of 0.1.
 
+* **Merge dropped EXP orbs:** The game drops one orb per 100 EXP with no cap. Every orb is a network object, so EXP-gain stats and the number of players multiply that count directly — this is where most late-game frame drops and ping loss come from. Cap how many a single kill may drop (1/2/3/5/10) and the remainder is folded into the orbs that remain. **The total EXP does not change at all.** Only the host needs it on; guests without the mod see fewer orbs too.
 ### Multiplayer-Specific Features
 * **Currency Transfers:** Transfer leaves or dice to another player through chat. (An index number can be used instead of a nickname.)
   * Transfer leaves: `/giveleaf [nickname/index] [number]` (short form: `/gl`)
@@ -242,6 +248,8 @@ These options explicitly make the game easier.
 
 * **Party Status Panel:** Displays each party member's cumulative damage, damage share (%), DPS, held currency (leaves/dice/sapphires), and TOP 3 combos. Each item can be toggled on its own, and the position is either `Right` or `Custom` (moved with `Alt + drag`).
 * **Screen Zoom:** Zooms the game view out or in between 10% and 200%.
+  * **Ignore the game's zoom effects:** Pins the zoom so the camera stops lurching every time the game plays a zoom effect (mostly zoom-outs). The trade-off is that cut-scene framing is pinned as well.
+  * **Zoom in / zoom out keys:** Bind two keys to step the zoom by 10%. It never leaves the range above (10%–200%).
 * **Colorblind Mode:** Independently enables 'Colorblind mode for the inventory' and 'Colorblind mode for attack warnings', separate from the base game's settings.
   * **Commands (Change Attack Warning Color):**
     * `/qol colorblind <r> <g> <b>` (change to the desired RGB values)
@@ -250,6 +258,7 @@ These options explicitly make the game easier.
 * **Dropped EXP and Leaf:** Draws dropped EXP and leaves faded (50% / 25% / invisible). They are easy to mistake for enemy projectiles on a busy screen. Only the drawing changes; picking them up is unaffected.
 * **Show Boss HP Numbers:** Adds a number to the health bar of bosses and mid-bosses.
 * **Show the Boss's Aggro Target:** Draws a matching outline on the boss and on the player it is targeting.
+* **Level-up picks remaining:** Level-up rewards can be postponed instead of picked on the spot, but the game never tells you how many have piled up. This writes `3 picks left` in the middle of the ring of reward icons. The number includes the window you are looking at, and nothing is drawn when nothing is stacked. (on by default)
 * **Show Enchant Count on Item Slots:** Writes `★2` in the bottom-right of an item's slot to show how many times it has been enchanted. Normally you have to hover each slot for the tooltip. (On by default.)
 * **Notify When a Hidden Room Exists:** Prints one line when you enter a floor that has a secret room.
 * **Hide Other Players' Pings:** Immediately blocks ping icons and sounds from other players.
@@ -297,3 +306,4 @@ View them with `ESC` → `QoL Run Log`, or `/qol runs`. Choose between `Off / Mi
 Adding a floor to a multiplier command switches that multiplier to per-floor automatically; leaving it out uses the global value. Typing a command without a value shows the current setting.
 
 Commands that change settings only work **in the lobby**. The read-only ones, `/qol list` `/qol export` `/qol runs` `/qol speed`, work during a run as well.
+

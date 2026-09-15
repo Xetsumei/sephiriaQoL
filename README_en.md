@@ -1,6 +1,28 @@
 # Sephiria QoL Mod
 
+1.46.0: The mod now tells you in game when a new version is out, and lets you pick between **Install now / Later / Skip this version**. What you download takes effect the next time you start the game. The default is "ask, then install", and the `Libs` folder is never touched. In-game verification is pending.
+
+1.45.3: Odner explosion warnings are now a full-QoL setting chosen by the host before a run and locked during the run. Guests wait for host rules; missing rules from older hosts default to off. Update both host and guests to 1.45.3 or later for consistent behavior. Warning colors remain personal settings.
+
+1.45.2: Removed ItemBan scans of all pending rewards on level-up and floor changes. Each reward is checked against current candidates when opened or rerolled; Mind Burden padding still protects against insufficient candidates. No new setting is required. In-game performance gains have not yet been measured.
+
+1.45.1: Odner warnings now follow the actual ground position of each bomb every frame, including sliding after landing. Host target coordinates are no longer required. In-game verification is pending.
+
+1.45.0: Fixed `/gd` and `/givedice` being blocked when dice cheats were allowed but unused. Update the host and both trading players; active cheats or pending cheat rollback block transfers.
+Added **Show Odner's explosion range** under Difficulty Relief (off by default). Vanilla warning visuals show the cross explosions, stop at walls, and clear as explosions occur. Since 1.45.3, visibility follows host rules; colors remain personal settings. In-game visuals and live multiplayer have not yet been verified.
+
+1.43.0: Shows which inventory slots the Mystic combo will double, from the moment a run starts and without picking up a single Mystic artifact. Pending slots are written in grey as `x2 (2)` / `x2 (4)`, where the number in brackets is the artifact count that turns that slot on. Nothing is drawn in the lobby and it clears when the run ends. Off by default. In-game validation is pending.
+
+1.42.0: Added run-history inventory scrolling, one-row PgUp/PgDn inventory movement, per-reward reroll limits, typed spawn/health/damage multipliers up to 10000x, split-key HUD hints, and lines to pings from other players. Full-mode-only option titles are yellow. Removed the town talent mirror; mod-granted slots containing items are no longer reclaimed until empty. The reported leftover-state bug remains unconfirmed; in-game validation is pending. Convenience + host uses vanilla lobbies; On uses separate QoL lobbies.
+
+1.41.0: `Hold to keep dashing` now only keeps dashing in combat; outside combat, holding the key gives you the game's normal run. 1.40.2 stops the `Friendly allies` option from removing the vampire bat, which made the blood donation event disappear. 1.40.1 fixes party status panels showing raw color and line-spacing tags for some players.
+
 1.38.0 makes the key-binding rows behave exactly like the game's own `Keyboard` options tab. It also carries everything added in 1.34.0-1.37.0: rooms hidden from players without the mod, the remaining level-up picks counter, merged EXP orbs, separate level-up/potion keys, ignoring the game's zoom effects, and the performance work. Existing settings and run history carry over.
+
+1.40.0 adds three independent checkboxes. All default to off and are set by the host before a run.
+* Enemy settings: Keep concurrent enemy limit unscaled — preserves total spawns and retains the original concurrent limit for random waves.
+* Run settings: Gain EXP and leaves instantly — preserves distribution and bonuses while skipping drops. Level-ups also happen immediately.
+* Run settings: Spread drop creation and processing across frames — creates at most 32 drops/about 2 ms per frame. Health and damage application timing stays unchanged.
 
 **Sephiria QoL** is a comprehensive mod that adds various **quality-of-life features, difficulty adjustments, and other cheat-like features** not natively supported by Sephiria. It is designed for single-player or **multiplayer with other users of the same QoL mod**.
 
@@ -67,6 +89,7 @@ You can also switch with `/qol on | host | solo | off`. This value alone is not 
 * Prefer dash attacks while holding dash
 * Expand preset slots to 100
 * Put the talent mirror in town
+* Check for updates (alive even in Off, because someone who switched the mod off still needs new versions)
 
 **\<Run\>**
 * Instant reroll button
@@ -128,8 +151,8 @@ Only the settings you are currently using are exported. The nine slots are not i
 
 ### Other Convenience Features
 * **Auto-Cast Magic/Special Attacks:** Hold down the input for magic or an activatable artifact to cast it automatically whenever its cooldown ends. (Includes instant special attacks.)
-* **Hold to Keep Dashing:** Hold the dash key and you keep dashing instead of breaking into a run. No more mashing the key on `Infinite Dash` or dash-attack builds. It does nothing when you are out of dashes, and running stays off while this is on.
-* **Prefer Dash Attacks While Holding Dash:** A sub-option that only appears once the entry above is on. In the base game, spamming dash while holding left click makes a **basic attack** come out mid-dash instead of a dash attack. With this on, one extra left click is sent at the start of every dash so the dash attack gets the first shot. Every resource and cooldown the game checks still applies, so a basic attack still comes out when the weapon will not give you a dash attack. (Bow, staff and golem weapons are excluded.)
+* **Hold to Keep Dashing:** Hold the dash key in combat and you keep dashing. No more mashing the key on `Infinite Dash` or dash-attack builds. It does nothing when you are out of dashes. The game never lets you run during combat anyway, so outside combat holding the key gives you the normal run; if combat ends while you are still holding it, you break into a run without pressing it again.
+* **Prefer Dash Attacks While Holding Dash:** A sub-option that only appears once `Hold to Keep Dashing` is on. In the base game, spamming dash while holding left click makes a **basic attack** come out mid-dash instead of a dash attack. With this on, one extra left click is sent at the start of every dash so the dash attack gets the first shot. Every resource and cooldown the game checks still applies, so a basic attack still comes out when the weapon will not give you a dash attack. (Bow, staff and golem weapons are excluded.)
 * **Separate the level-up and potion keys:** The game puts "open the level-up window" and "drink a potion" on one key (`R`). The condition is "not in battle and a reward is still pending", so **once a fight ends while you have postponed a level-up reward, you cannot drink a potion at all.** Turning this on reveals two key rows below it.
   * If you bind a potion key, the game's original key does nothing. If you leave it unbound, the original key keeps drinking as before.
   * The key rows behave **exactly like the game's own `Keyboard` options tab**: click a row, `Press a key` appears, and the next key you press is bound. `ESC` backs out. (A key the game already uses will fire both, so pick a free one.)
@@ -225,6 +248,7 @@ These options explicitly make the game easier.
 * **Free Miracle Rerolls:** Lets you keep rerolling miracles with no dice at all.
 * **Open the Stats Window / Inventory During Battle:** Lets you open the character stats window and the inventory while a battle is running. Time keeps flowing, so you take hits with the window open.
 * **Allow Engraving the Chintamani Stone:** The Chintamani Stone normally revives you once on death, leaves `+3` levels on the slot it occupied, and disappears. With this on, hold right-click on the stone in your bag to fill the same gauge as a stone-tablet engraving and take that second half early. The levels stay on the slot, so they also apply to whatever artifact you place there later.
+* **Teleport Command (/tp):** `/tp <name|index>` pulls that party member to you — you do not move. It is meant for rescuing someone a bug has dropped outside the map, where the run cannot continue, and it works even if they are on a different floor (map). It only works between players whose QoL mode is **On**, and the host decides whether it is allowed.
 * **Hard-Mode Reward Unlock Relief:** If a player has not unlocked many hard-mode rewards, clearing a high tier (60) unlocks all rewards through level 50 at once.
 * **Remove Unique-Effect Restrictions:** Allows duplicate artifacts with unique effects to be obtained so their effects can stack. (Does not work with some artifacts.)
 * **Sapphire/Dice Cheats:**
@@ -260,6 +284,7 @@ These options explicitly make the game easier.
 * **Show the Boss's Aggro Target:** Draws a matching outline on the boss and on the player it is targeting.
 * **Level-up picks remaining:** Level-up rewards can be postponed instead of picked on the spot, but the game never tells you how many have piled up. This writes `3 picks left` in the middle of the ring of reward icons. The number includes the window you are looking at, and nothing is drawn when nothing is stacked. (on by default)
 * **Show Enchant Count on Item Slots:** Writes `★2` in the bottom-right of an item's slot to show how many times it has been enchanted. Normally you have to hover each slot for the tooltip. (On by default.)
+* **Preview the Slots the Mystic Combo Will Double:** Writes `x2 (2)` / `x2 (4)` in **grey** at the top-right of every slot the Mystic combo is going to double, from the moment a run starts. The number in brackets is the artifact count that turns that slot on. Normally you have to pick up a Mystic artifact first, and even then you only see it by hovering the combo row. Once a slot is actually on, the game writes its own white `*2` there, so the preview steps aside. Nothing is drawn in the lobby, and it clears when the run ends. (Off by default.)
 * **Notify When a Hidden Room Exists:** Prints one line when you enter a floor that has a secret room.
 * **Hide Other Players' Pings:** Immediately blocks ping icons and sounds from other players.
 * **Chat Log Scrollback:** With the chat box open, put the mouse over the log lines and use the wheel to look back through the last 200 lines.
@@ -288,6 +313,7 @@ View them with `ESC` → `QoL Run Log`, or `/qol runs`. Choose between `Off / Mi
 
 /gl <name|index> <amount>          give leaves      (/giveleaf)
 /gd <name|index> <amount>          give dice        (/givedice)
+/tp <name|index>                   pull that player to you
 /cheat s | /cheat d                sapphire / dice cheat status
 
 /qol on | host | solo | off        all / convenience+host / convenience only / off

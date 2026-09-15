@@ -1,5 +1,11 @@
 # Sephiria QoL — Changelog
 
+## 1.47.0
+
+- When you enter the game, chat now shows the version check result: "The mod is up to date.", or, if a new version exists, the update prompt together with "You can update with /qol update."
+- Mod notifications, command help and the update prompt now support Korean, English, Japanese and Chinese. They follow the game language; lines sent to the whole room's chat follow the host's language.
+- The notification prefix changed from [모드] to [QoL].
+
 ## 1.46.5
 
 - Fixed the new-version prompt closing right away when entering the game, so it never showed up.

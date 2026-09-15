@@ -1,6 +1,6 @@
 {
   "modName": "Sephiria QoL",
-  "modVersion": "1.46.4",
+  "modVersion": "1.46.5",
   "modAuthor": "Xetsumei",
   "dllFile": "SephiriaQoL.dll",
   "entryClass": "SephiriaQoL.QoLMod"

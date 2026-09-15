@@ -1,5 +1,9 @@
 # Sephiria QoL — Changelog
 
+## 1.46.5
+
+- Fixed the new-version prompt closing right away when entering the game, so it never showed up.
+
 ## 1.46.4
 
 - The restart notice after an update now mentions that the new version takes effect once you enter the game from the title screen.

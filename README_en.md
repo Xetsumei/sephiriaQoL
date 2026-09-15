@@ -1,5 +1,8 @@
 ﻿# Sephiria QoL Mod
 
+- README and patch notes are available in the GitHub repository and are not included in release ZIPs.
+
+
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
 ## 1.47.2 — 2026-09-15

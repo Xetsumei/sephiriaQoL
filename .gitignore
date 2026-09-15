@@ -5,15 +5,7 @@
 !/Libs/0Harmony.dll
 !/Libs/THIRD_PARTY_NOTICES.md
 !/metadata.json
-!/patchlog.md
-!/patchlog_en.md
-!/patchlog_jp.md
-!/patchlog_ko.md
-!/patchlog_zh.md
-!/README.md
-!/README_en.md
-!/README_jp.md
-!/README_ko.md
-!/README_zh.md
+!/patchlog*.md
+!/README*.md
 !/SephiriaQoL.dll
 !/update.json

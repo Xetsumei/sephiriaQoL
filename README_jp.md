@@ -1,5 +1,8 @@
 ﻿# セフィリア QoL (Sephiria QoL) モッド
 
+- READMEと更新履歴はGitHubリポジトリで確認できます。ReleaseのZIPには含まれません。
+
+
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
 ## 1.47.2 — 2026-09-15

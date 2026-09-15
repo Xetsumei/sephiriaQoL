@@ -1,5 +1,8 @@
 ﻿# 塞菲莉亚 QoL (Sephiria QoL) 模组
 
+- README和更新记录可在GitHub仓库查看，不包含在Release ZIP中。
+
+
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
 ## 1.47.2 — 2026-09-15

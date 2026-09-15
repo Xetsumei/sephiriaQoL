@@ -1,5 +1,8 @@
 ﻿# 세피리아 QoL (Sephiria QoL) 모드
 
+- README와 업데이트 기록은 GitHub 저장소에서 확인할 수 있습니다. Release ZIP에는 포함하지 않습니다.
+
+
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
 ## 1.47.2 — 2026-09-15

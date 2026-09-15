@@ -1,5 +1,15 @@
 # Sephiria QoL Mod
 
+[한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
+
+## 1.47.1
+
+- Fixed an issue where cleanup could delete a newly installed version and prevent the mod from loading.
+- Failed update checks no longer report that the mod is up to date.
+- Restart is postponed if a run starts during the countdown. It also waits for other mod downloads.
+- Automatic updates now refresh the README and update history.
+- Update prompts from multiple mods no longer overwrite each other.
+
 1.46.0: The mod now tells you in game when a new version is out, and lets you pick between **Install now / Later / Skip this version**. What you download takes effect the next time you start the game. The default is "ask, then install", and the `Libs` folder is never touched. In-game verification is pending.
 
 1.45.3: Odner explosion warnings are now a full-QoL setting chosen by the host before a run and locked during the run. Guests wait for host rules; missing rules from older hosts default to off. Update both host and guests to 1.45.3 or later for consistent behavior. Warning colors remain personal settings.

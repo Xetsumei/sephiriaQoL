@@ -1,5 +1,9 @@
 # Sephiria QoL — Changelog
 
+## 1.46.4
+
+- The restart notice after an update now mentions that the new version takes effect once you enter the game from the title screen.
+
 ## 1.46.3
 
 - Fixed the previous version's file being left behind in the mod folder after an update.

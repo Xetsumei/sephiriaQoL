@@ -1,5 +1,10 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.47.3 — 2026-09-16
+
+- Updated the distribution files.
+
+
 ## 1.47.2 — 2026-09-15
 
 - Release update history is available in the `patchlog` files.

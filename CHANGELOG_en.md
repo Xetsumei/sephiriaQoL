@@ -1,5 +1,9 @@
 # Sephiria QoL — Changelog
 
+## 1.46.3
+
+- Fixed the previous version's file being left behind in the mod folder after an update.
+
 ## 1.46.2
 
 - Reworded the update prompt and its buttons: [Update now / Remind me later / Skip this update]

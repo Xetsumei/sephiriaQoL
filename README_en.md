@@ -5,6 +5,10 @@
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
+## 1.47.5 — 2026-09-16
+
+- The [General] tab's "Check for updates" row is now a single "Automatic updates" checkbox. With it on (the default) the mod checks for a new version every time you enter the game; with it off nothing is checked on launch and no update window appears. You can still check yourself with `/qol update`.
+
 ## 1.47.2 — 2026-09-15
 
 - Release update history is available in the `patchlog` files.
@@ -107,7 +111,7 @@ You can also switch with `/qol on | host | solo | off`. This value alone is not 
 * Prefer dash attacks while holding dash
 * Expand preset slots to 100
 * Put the talent mirror in town
-* Check for updates (alive even in Off, because someone who switched the mod off still needs new versions)
+* Automatic updates (alive even in Off, because someone who switched the mod off still needs new versions)
 
 **\<Run\>**
 * Instant reroll button

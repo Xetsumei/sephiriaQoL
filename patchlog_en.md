@@ -1,5 +1,11 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.47.5 — 2026-09-16
+
+- The "Check for updates" row in the [General] tab is now a single "Automatic updates" checkbox.
+- With it on, the mod checks for a new version every time you enter the game. It says "The mod is up to date." when there is nothing new, and opens the update window when there is.
+- With it off, nothing is checked on launch and no update window appears. You can still check yourself with `/qol update`.
+
 ## 1.47.4 — 2026-09-16
 
 - README and patch notes are available in the GitHub repository and are not included in release ZIPs.

@@ -1,6 +1,11 @@
-# 세피리아 QoL (Sephiria QoL) 모드
+﻿# 세피리아 QoL (Sephiria QoL) 모드
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
+
+## 1.47.2 — 2026-09-15
+
+- 배포본의 업데이트 기록은 `patchlog` 파일에서 확인할 수 있습니다.
+- 설정 창의 [업데이트 기록 열기]도 게임 언어에 맞는 패치로그를 엽니다.
 
 ## 1.47.1
 

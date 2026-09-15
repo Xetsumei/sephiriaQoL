@@ -1,10 +1,6 @@
 # Distribution files only. Source and internal notes stay local.
 *
 !/.gitignore
-!/CHANGELOG_en.md
-!/CHANGELOG_jp.md
-!/CHANGELOG_ko.md
-!/CHANGELOG_zh.md
 !/Libs/
 !/Libs/0Harmony.dll
 !/Libs/THIRD_PARTY_NOTICES.md

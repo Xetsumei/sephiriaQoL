@@ -1,4 +1,9 @@
-# Sephiria QoL — Changelog
+﻿# Sephiria QoL — Patch notes
+
+## 1.47.2 — 2026-09-15
+
+- Release update history is available in the `patchlog` files.
+- [Open patch notes] in the settings opens the patchlog for the game language.
 
 ## 1.47.1 — 2026-09-15
 

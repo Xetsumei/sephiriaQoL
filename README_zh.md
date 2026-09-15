@@ -1,6 +1,11 @@
-# 塞菲莉亚 QoL (Sephiria QoL) 模组
+﻿# 塞菲莉亚 QoL (Sephiria QoL) 模组
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
+
+## 1.47.2 — 2026-09-15
+
+- 发布版本的更新记录可在 `patchlog` 文件中查看。
+- 设置中的［打开更新记录］也会打开与游戏语言对应的补丁记录。
 
 ## 1.47.1
 

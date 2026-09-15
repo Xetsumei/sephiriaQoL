@@ -1,6 +1,11 @@
-# Sephiria QoL Mod
+﻿# Sephiria QoL Mod
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
+
+## 1.47.2 — 2026-09-15
+
+- Release update history is available in the `patchlog` files.
+- [Open patch notes] in the settings opens the patchlog for the game language.
 
 ## 1.47.1
 

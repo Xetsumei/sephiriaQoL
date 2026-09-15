@@ -1,6 +1,11 @@
-# セフィリア QoL (Sephiria QoL) モッド
+﻿# セフィリア QoL (Sephiria QoL) モッド
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
+
+## 1.47.2 — 2026-09-15
+
+- 配布版の更新履歴は `patchlog` ファイルで確認できます。
+- 設定画面の［更新履歴を開く］もゲームの言語に合ったパッチログを開きます。
 
 ## 1.47.1
 

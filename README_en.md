@@ -2,8 +2,37 @@
 
 - README and patch notes are available in the GitHub repository and are not included in release ZIPs.
 
-
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
+
+## 1.50.1 — 2026-09-17
+
+- Fixed items and tablets in the extra bottom slots added by "Extra inventory slots" disappearing when you quit the game and continued the run.
+- Items and tablets already lost in an earlier save cannot be restored.
+
+## 1.50.0 — 2026-09-16
+
+- Fixed "Preview the slots the Mystic combo will double" pointing at the wrong slots after your inventory grew. In a room whose host has it on, Mystic slots are now fixed when the run starts, so they no longer move when you gain slots, and guests see the same slots.
+- In the `Convenience only` tier only the preview runs, so the shown slots can still move when you gain slots.
+
+## 1.49.2 — 2026-09-16
+
+- Fixed "Auto special-then-basic attack" repeating only the special attack. The basic attack is now sent 0.1 seconds after the special and the button is held until that attack starts, so the two strictly alternate.
+
+## 1.49.1 — 2026-09-16
+
+- "Auto dash-attack chain" now actually produces dash attacks. While a dash is available no basic attack is let out and [dash → dash attack] repeats; basic attacks carry on only while no dash is left.
+- "Auto special-then-basic attack" now keeps chaining while left click is held: [special → basic] repeats for as long as the special attack is available.
+
+## 1.49.0 — 2026-09-16
+
+- The `General` tab has a new "Auto dash-attack chain" checkbox. With it on, holding left click slips a dash in whenever one is ready, so dashes and basic attacks alternate.
+- The `General` tab has a new "Auto special-then-basic attack" checkbox. With it on, every left click fires the special attack first. Weapons whose special sets up the next basic attack now run off a single button.
+- Both are off by default, and MP, ammo and cooldowns are still checked exactly as the game checks them.
+
+## 1.48.0 — 2026-09-16
+
+- The `Relief` tab has a new "Enable stone tablet engraving from the start" checkbox. With it on, you can engrave tablets in your bag from the start of a run without reaching level 20 of the Survival talent.
+- Only the host needs it on, and guests without the mod get it too.
 
 ## 1.47.5 — 2026-09-16
 
@@ -109,6 +138,8 @@ You can also switch with `/qol on | host | solo | off`. This value alone is not 
 * Hold to repeat special attack
 * Hold to keep dashing
 * Prefer dash attacks while holding dash
+* Auto dash-attack chain
+* Auto special-then-basic attack
 * Expand preset slots to 100
 * Put the talent mirror in town
 * Automatic updates (alive even in Off, because someone who switched the mod off still needs new versions)
@@ -175,6 +206,8 @@ Only the settings you are currently using are exported. The nine slots are not i
 * **Auto-Cast Magic/Special Attacks:** Hold down the input for magic or an activatable artifact to cast it automatically whenever its cooldown ends. (Includes instant special attacks.)
 * **Hold to Keep Dashing:** Hold the dash key in combat and you keep dashing. No more mashing the key on `Infinite Dash` or dash-attack builds. It does nothing when you are out of dashes. The game never lets you run during combat anyway, so outside combat holding the key gives you the normal run; if combat ends while you are still holding it, you break into a run without pressing it again.
 * **Prefer Dash Attacks While Holding Dash:** A sub-option that only appears once `Hold to Keep Dashing` is on. In the base game, spamming dash while holding left click makes a **basic attack** come out mid-dash instead of a dash attack. With this on, one extra left click is sent at the start of every dash so the dash attack gets the first shot. Every resource and cooldown the game checks still applies, so a basic attack still comes out when the weapon will not give you a dash attack. (Bow, staff and golem weapons are excluded.)
+* **Auto Dash-Attack Chain:** Hold left click and [dash → dash attack] repeats. While a dash is available **no basic attack is let out** — basic attacks only carry on while you are out of dashes, and the moment one comes back the chain returns to dash attacks. It does nothing on weapons that have no dash attack (bow, staff, golem, and forms that drop the dash attack). (If you would rather hold the dash key instead, that is `Prefer dash attacks while holding dash`.)
+* **Auto Special-Then-Basic Attack:** Every left click fires the special attack first, and the basic attack follows right after. Weapons whose special sets up the next basic attack — the katana's sheathe-and-draw, for one — now run off a single button. Hold the button and [special → basic] repeats for as long as the special attack is available. The basic attack goes out 0.1 seconds after the special and the button is held until that attack starts, so the two strictly alternate. When you are short on MP the game shows its usual `Low MP!` and only the basic attack comes out. (Quarterstaff, dagger, katana and crossbow are covered. Weapons that fire on button release, like the greatsword and sword-and-shield, are excluded.)
 * **Separate the level-up and potion keys:** The game puts "open the level-up window" and "drink a potion" on one key (`R`). The condition is "not in battle and a reward is still pending", so **once a fight ends while you have postponed a level-up reward, you cannot drink a potion at all.** Turning this on reveals two key rows below it.
   * If you bind a potion key, the game's original key does nothing. If you leave it unbound, the original key keeps drinking as before.
   * The key rows behave **exactly like the game's own `Keyboard` options tab**: click a row, `Press a key` appears, and the next key you press is bound. `ESC` backs out. (A key the game already uses will fire both, so pick a free one.)
@@ -270,6 +303,7 @@ These options explicitly make the game easier.
 * **Free Miracle Rerolls:** Lets you keep rerolling miracles with no dice at all.
 * **Open the Stats Window / Inventory During Battle:** Lets you open the character stats window and the inventory while a battle is running. Time keeps flowing, so you take hits with the window open.
 * **Allow Engraving the Chintamani Stone:** The Chintamani Stone normally revives you once on death, leaves `+3` levels on the slot it occupied, and disappears. With this on, hold right-click on the stone in your bag to fill the same gauge as a stone-tablet engraving and take that second half early. The levels stay on the slot, so they also apply to whatever artifact you place there later.
+* **Enable Stone Tablet Engraving from the Start:** Engraving normally unlocks at level 20 of the Survival talent. With this on, you can hold right-click on a tablet in your bag to engrave it from the start of the run, whatever your talents are. Only the host needs it on, and guests without the mod get it too.
 * **Teleport Command (/tp):** `/tp <name|index>` pulls that party member to you — you do not move. It is meant for rescuing someone a bug has dropped outside the map, where the run cannot continue, and it works even if they are on a different floor (map). It only works between players whose QoL mode is **On**, and the host decides whether it is allowed.
 * **Hard-Mode Reward Unlock Relief:** If a player has not unlocked many hard-mode rewards, clearing a high tier (60) unlocks all rewards through level 50 at once.
 * **Remove Unique-Effect Restrictions:** Allows duplicate artifacts with unique effects to be obtained so their effects can stack. (Does not work with some artifacts.)

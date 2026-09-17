@@ -1,5 +1,36 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.50.1 — 2026-09-17
+
+- Fixed items and tablets in the extra bottom slots added by "Extra inventory slots" disappearing when you quit the game and continued the run.
+
+## 1.50.0 — 2026-09-16
+
+- Fixed "Preview the slots the Mystic combo will double" pointing at the wrong slots after your inventory grew. In a room whose host has it on, Mystic slots are now fixed when the run starts, so they no longer move when you gain slots, and guests see the same slots.
+- In the `Convenience only` tier only the preview runs, so the shown slots can still move when you gain slots.
+
+## 1.49.2 — 2026-09-16
+
+- Fixed "Auto special-then-basic attack" repeating only the special attack. The special and the basic attack now strictly alternate.
+- The basic attack is now sent 0.1 seconds after the special, and the button is held until that attack starts — on weapons like the katana the follow-up cut only comes out while the button is still down.
+
+## 1.49.1 — 2026-09-16
+
+- "Auto dash-attack chain" now actually produces dash attacks. The basic attack used to go out first and bury the dash; while a dash is available the mod no longer lets a basic attack out, and repeats [dash → dash attack] instead. Basic attacks resume only while no dash is left.
+- "Auto special-then-basic attack" now keeps chaining while left click is held. Only the first press used to get the special attack; now [special → basic] repeats for as long as the special attack is available.
+- "Auto dash-attack chain" does nothing on weapons that have no dash attack (bow, staff, golem).
+
+## 1.49.0 — 2026-09-16
+
+- The [General] tab has a new "Auto dash-attack chain" checkbox. With it on, holding left click slips in a dash whenever one is ready, so dashes and basic attacks alternate.
+- The [General] tab has a new "Auto special-then-basic attack" checkbox. With it on, every left click fires the special attack first and the basic attack follows. It covers the quarterstaff, dagger, katana and crossbow; the greatsword and sword-and-shield, which fire on button release, are excluded.
+- Both are off by default, work in the `Convenience only` tier, and can be toggled during a run.
+
+## 1.48.0 — 2026-09-16
+
+- The `Relief` tab has a new "Enable stone tablet engraving from the start" checkbox. With it on, you can engrave tablets in your bag from the start of a run without reaching level 20 of the Survival talent.
+- Only the host needs it on, and guests without the mod get it too.
+
 ## 1.47.5 — 2026-09-16
 
 - The "Check for updates" row in the [General] tab is now a single "Automatic updates" checkbox.

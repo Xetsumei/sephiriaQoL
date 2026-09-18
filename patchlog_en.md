@@ -1,5 +1,10 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.51.0 — 2026-09-18
+
+- The `Relief` tab has a new "Free rerolls on the first level-up choice" checkbox, just above "Free miracle rerolls". With it on, the first level-up choice of a run can be rerolled without dice. Later level-up choices cost dice as usual.
+- Only available when the QoL mode is `On`. When the host turns it on, it applies to everyone in the room.
+
 ## 1.50.1 — 2026-09-17
 
 - Fixed items and tablets in the extra bottom slots added by "Extra inventory slots" disappearing when you quit the game and continued the run.

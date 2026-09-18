@@ -4,6 +4,11 @@
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
+## 1.51.0 — 2026-09-18
+
+- The `Relief` tab has a new "Free rerolls on the first level-up choice" checkbox, just above "Free miracle rerolls". With it on, the first level-up choice of a run can be rerolled without dice. Later level-up choices cost dice as usual.
+- Only available when the QoL mode is `On`. When the host turns it on, it applies to everyone in the room.
+
 ## 1.50.1 — 2026-09-17
 
 - Fixed items and tablets in the extra bottom slots added by "Extra inventory slots" disappearing when you quit the game and continued the run.
@@ -180,7 +185,7 @@ Features that are not option rows, the journal name search and the QoL Info pane
 * Show every anvil enhancement
 * Open the stats window / inventory during battle
 
-What drops out here is anything **decided on a guest's machine that changes the run**: leaf and dice transfers, the wish fountain options, journal bans, removing the unique restriction, the cheats, obelisk rerolls, the reroll limit, game speed, revive speed, unlocking the level cap, free miracle rerolls, and the rest of the difficulty relief group. If the host alone turned those on, it is the guest without the mod who would break.
+What drops out here is anything **decided on a guest's machine that changes the run**: leaf and dice transfers, the wish fountain options, journal bans, removing the unique restriction, the cheats, obelisk rerolls, the reroll limit, game speed, revive speed, unlocking the level cap, free rerolls on the first level-up choice, free miracle rerolls, and the rest of the difficulty relief group. If the host alone turned those on, it is the guest without the mod who would break.
 
 ---
 
@@ -300,6 +305,7 @@ These options explicitly make the game easier.
 * **Show Every Anvil Enhancement:** Shows every enhancement the anvil can offer.
 * **Shop Relief:** Increases both the number of items merchants sell and the number of items added by rerolling.
 * **Fix the Enchant Count:** Fixes the number of enchants that appear in enchantment rooms to a value between 1 and 10.
+* **Free Rerolls on the First Level-Up Choice:** The first level-up choice of a run can be rerolled without dice. Later level-up choices cost dice as usual.
 * **Free Miracle Rerolls:** Lets you keep rerolling miracles with no dice at all.
 * **Open the Stats Window / Inventory During Battle:** Lets you open the character stats window and the inventory while a battle is running. Time keeps flowing, so you take hits with the window open.
 * **Allow Engraving the Chintamani Stone:** The Chintamani Stone normally revives you once on death, leaves `+3` levels on the slot it occupied, and disappears. With this on, hold right-click on the stone in your bag to fill the same gauge as a stone-tablet engraving and take that second half early. The levels stay on the slot, so they also apply to whatever artifact you place there later.

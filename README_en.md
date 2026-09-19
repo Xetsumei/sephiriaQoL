@@ -4,6 +4,14 @@
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
+## 1.52.0 — 2026-09-19
+
+- Fixed being thrown outside the map after visiting the shop through the portal from "Guarantee the pocket dimension". Instead of placing a portal on the spot, the mod now makes the floor generate the game's own pocket dimension room. It shows up on the minimap, and the return trip lands you where it should.
+- The `Run rules` tab has a new "Guarantee the altar of luck" row below the other encounter guarantees. The chosen floor always gets a room with an altar of luck.
+- Below it there is a new "Ban hidden room reward types" checkbox. Turning it on unfolds five rows — EXP chest, breakable pile, money chest, dice, mystic pot — and whatever you check will not appear in hidden rooms. You cannot check all five.
+- "Ban hidden room reward types" applies to everyone in the room when the host turns it on. It cannot choose which hidden room appears, only what is placed inside it.
+- Added a safety net for floor travel: when the game cannot find a landing spot it used to drop you outside the map, and now it sends you to that floor's starting point instead. This also covers runs that were started on 1.51.0 or earlier.
+
 ## 1.51.0 — 2026-09-18
 
 - The `Relief` tab has a new "Free rerolls on the first level-up choice" checkbox, just above "Free miracle rerolls". With it on, the first level-up choice of a run can be rerolled without dice. Later level-up choices cost dice as usual.
@@ -287,7 +295,9 @@ From `x25` up the value is shown in red and a lag warning appears when you apply
 
 <img width="850" height="248" alt="image" src="https://github.com/user-attachments/assets/7d9891b4-a796-4fde-923f-e91feb07c15f" />
 
-* **Guarantee Special Objects:** Forces an obelisk, suspicious merchant, pocket dimension shop, and blood donation event to appear after defeating the boss on each floor. (Floor 6 is not offered, since beating its boss ends the run.)
+* **Guarantee Special Objects:** Forces an obelisk, suspicious merchant, and blood donation event to appear after defeating the boss on each floor. (Floor 6 is not offered, since beating its boss ends the run.)
+* **Guarantee the Pocket Dimension / the Altar of Luck:** Makes the chosen floor always contain that room. Rather than placing the object itself, the mod makes the floor generate the game's own room, so it shows on the minimap and guests without the mod see exactly the same thing.
+* **Ban Hidden Room Reward Types:** Excludes the kinds you dislike out of the five a hidden room can hold (EXP chest, breakable pile, money chest, dice, mystic pot). You cannot exclude all five. It cannot choose which hidden room appears, only what is placed inside it.
 
 <img width="850" height="599" alt="image" src="https://github.com/user-attachments/assets/7cba1c05-091c-4035-aaab-5808b0694c6d" />
 

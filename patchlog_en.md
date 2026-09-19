@@ -1,5 +1,13 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.52.0 — 2026-09-19
+
+- Fixed being thrown outside the map after visiting the shop through the portal from "Guarantee the pocket dimension". Instead of placing a portal on the spot, the mod now makes the floor generate the game's own pocket dimension room. It shows up on the minimap, and the return trip lands you where it should.
+- The `Run rules` tab has a new "Guarantee the altar of luck" row below the other encounter guarantees. The chosen floor always gets a room with an altar of luck.
+- Below it there is a new "Ban hidden room reward types" checkbox. Turning it on unfolds five rows — EXP chest, breakable pile, money chest, dice, mystic pot — and whatever you check will not appear in hidden rooms. You cannot check all five.
+- "Ban hidden room reward types" applies to everyone in the room when the host turns it on. It cannot choose which hidden room appears, only what is placed inside it.
+- Added a safety net for floor travel: when the game cannot find a landing spot it used to drop you outside the map, and now it sends you to that floor's starting point instead. This also covers runs that were started on 1.51.0 or earlier.
+
 ## 1.51.0 — 2026-09-18
 
 - The `Relief` tab has a new "Free rerolls on the first level-up choice" checkbox, just above "Free miracle rerolls". With it on, the first level-up choice of a run can be rerolled without dice. Later level-up choices cost dice as usual.

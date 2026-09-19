@@ -1,7 +1,7 @@
 {
-    "version":  "1.52.0",
-    "zip":  "https://github.com/Xetsumei/sephiriaQoL/releases/download/1.52.0/SephiriaQoL.zip",
-    "sha256":  "a61d7583c11897ac5af3b816b4ee365be3e75eeb513bced47cbd5f1fa3b38fa7",
+    "version":  "1.53.0",
+    "zip":  "https://github.com/Xetsumei/sephiriaQoL/releases/download/1.53.0/SephiriaQoL.zip",
+    "sha256":  "a7e0ed824f07c1bb8680d46e7d4b31371de075b3812b70dd255e32ec21566414",
     "dllEntry":  "SephiriaQoL.dll",
     "libsVersion":  1,
     "notes":  ""

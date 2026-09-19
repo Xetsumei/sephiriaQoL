@@ -4,6 +4,13 @@
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
+## 1.53.0 — 2026-09-20
+
+- The `Relief` tab has a new "Ease quest artifact goals" row, just below "Fix the enchant count". It lowers the goal of artifacts that turn into a finished version once their condition is met — Discarded Golden Ring, Rusty Tsuba, Trainee Duelist's Epaulette, Faded Shield Crest, Stiff Crank and Dull Resonance Stone.
+- "Complete instantly" turns them into the finished version as soon as they go into your bag. x0.1 to x0.9 multiplies the required count (at least 1), and the artifact's description shows the lowered count. For Dull Resonance Stone, only the part of the required move speed above 100% is lowered.
+- An artifact that has already made progress turns into the finished version right away if it has reached the lowered goal.
+- Applies to everyone in the room when the host turns it on. Guests with the mod also see the host's count in the artifact description, and even guests without the mod get the host's progress counter and actual goal.
+
 ## 1.52.0 — 2026-09-19
 
 - Fixed being thrown outside the map after visiting the shop through the portal from "Guarantee the pocket dimension". Instead of placing a portal on the spot, the mod now makes the floor generate the game's own pocket dimension room. It shows up on the minimap, and the return trip lands you where it should.

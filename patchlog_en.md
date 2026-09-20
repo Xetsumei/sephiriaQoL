@@ -1,5 +1,12 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.54.0 — 2026-09-21
+
+- **Keep training dummies from breaking** has been added to the `Enemies` tab, right under *Ease Blood Festival*. With it on, the dummies in the training ground and at floor entrances / boss doors no longer shatter from a single hit. Hitting them and the damage meter work exactly as before.
+- A single hit above 100,000 used to read `99999` on the meter; with this on it shows the real number.
+- The host's setting applies to everyone in the room, including guests without the mod.
+- The settings file and the run records are now also saved to `Documents\Saved Games\Sephiria`. Both survive an update done by deleting the mod folder and unzipping a new one, and they are restored from that spare copy if the one in the mod folder is damaged.
+
 ## 1.53.0 — 2026-09-20
 
 - The `Relief` tab has a new "Ease quest artifact goals" row, just below "Fix the enchant count". It lowers the goal of artifacts that turn into a finished version once their condition is met — Discarded Golden Ring, Rusty Tsuba, Trainee Duelist's Epaulette, Faded Shield Crest, Stiff Crank and Dull Resonance Stone.

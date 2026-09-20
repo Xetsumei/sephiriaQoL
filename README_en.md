@@ -4,6 +4,13 @@
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
+## 1.54.0 — 2026-09-21
+
+- **Keep training dummies from breaking** has been added to the `Enemies` tab, right under *Ease Blood Festival*. With it on, the dummies in the training ground and at floor entrances / boss doors no longer shatter from a single hit. Hitting them and the damage meter work exactly as before.
+- A single hit above 100,000 used to read `99999` on the meter; with this on it shows the real number.
+- The host's setting applies to everyone in the room, including guests without the mod.
+- The settings file and the run records are now also saved to `Documents\Saved Games\Sephiria`. Both survive an update done by deleting the mod folder and unzipping a new one, and they are restored from that spare copy if the one in the mod folder is damaged.
+
 ## 1.53.0 — 2026-09-20
 
 - The `Relief` tab has a new "Ease quest artifact goals" row, just below "Fix the enchant count". It lowers the goal of artifacts that turn into a finished version once their condition is met — Discarded Golden Ring, Rusty Tsuba, Trainee Duelist's Epaulette, Faded Shield Crest, Stiff Crank and Dull Resonance Stone.
@@ -116,6 +123,8 @@ When all features are disabled, the game is designed to behave exactly like the 
 
 No separate loader has to be installed. The game's built-in add-on loader reads it as is.
 
+> **Your settings and run records are also kept outside the mod folder** (since 1.54.0). `SephiriaQoL.json` and `SephiriaQoL.runs.json` are written to `Documents\Saved Games\Sephiria\` as well, so updating by deleting the mod folder and unzipping a new one no longer resets them.
+
 <img width="394" height="199" alt="image" src="https://github.com/user-attachments/assets/adeca4bc-74d6-486e-8807-376b18a8f211" />
 
 ---
@@ -182,6 +191,7 @@ Features that are not option rows, the journal name search and the QoL Info pane
 **\<Enemies\>**
 * All four multipliers: enemy spawn / health / damage / pattern speed (scope included)
 * Ease Blood Festival
+* Keep training dummies from breaking
 * Apply the spawn multiplier to mid-bosses
 
 **\<Run\>**
@@ -261,6 +271,7 @@ Values are kept per scope, so switching between scopes does not erase them.
 * **Enemy Pattern Speed:** Shortens pattern cooldowns to increase attack frequency. `0.5x` ~ `3x`.
 * **Applying Multipliers to Mid-Bosses:** Mid-bosses spawn in the numbers set by the spawn multiplier. Their health is already high, so applying the multiplier in full makes them take far too long; use the per-type scope to lower mid-bosses on their own, or pick `Divide by the spawn multiplier`.
 * **Ease Blood Festival:** Even when the enemy health multiplier is enabled, this forces life steal to be calculated using only each monster's 'base maximum health'.
+* **Keep training dummies from breaking:** The dummies in the training ground and at floor entrances / boss doors no longer shatter from a single hit, and a hit above 100,000 shows its real number on the damage meter. (The host’s setting applies to the whole room, and this row can be toggled during a run.)
 
 From `x25` up the value is shown in red and a lag warning appears when you apply it. Commands accept up to 999x.
 

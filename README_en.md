@@ -4,6 +4,10 @@
 
 [한국어](README_ko.md) · [English](README_en.md) · [日本語](README_jp.md) · [中文](README_zh.md)
 
+## 1.55.0 — 2026-09-27
+
+- A new **Reset zoom to 100% key** row has been added to the `Display` tab, right under *Zoom out key*. Pressing the bound key puts the screen zoom straight back to 100% (the game's default).
+
 ## 1.54.0 — 2026-09-21
 
 - **Keep training dummies from breaking** has been added to the `Enemies` tab, right under *Ease Blood Festival*. With it on, the dummies in the training ground and at floor entrances / boss doors no longer shatter from a single hit. Hitting them and the damage meter work exactly as before.
@@ -364,6 +368,7 @@ These options explicitly make the game easier.
 * **Screen Zoom:** Zooms the game view out or in between 10% and 200%.
   * **Ignore the game's zoom effects:** Pins the zoom so the camera stops lurching every time the game plays a zoom effect (mostly zoom-outs). The trade-off is that cut-scene framing is pinned as well.
   * **Zoom in / zoom out keys:** Bind two keys to step the zoom by 10%. It never leaves the range above (10%–200%).
+  * **Reset zoom to 100% key:** Pressing the bound key puts the zoom straight back to 100%.
 * **Colorblind Mode:** Independently enables 'Colorblind mode for the inventory' and 'Colorblind mode for attack warnings', separate from the base game's settings.
   * **Commands (Change Attack Warning Color):**
     * `/qol colorblind <r> <g> <b>` (change to the desired RGB values)

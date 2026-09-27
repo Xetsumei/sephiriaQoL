@@ -1,5 +1,9 @@
 ﻿# Sephiria QoL — Patch notes
 
+## 1.55.0 — 2026-09-27
+
+- A new **Reset zoom to 100% key** row has been added to the `Display` tab, right under *Zoom out key*. Pressing the bound key puts the screen zoom straight back to 100% (the game's default).
+
 ## 1.54.0 — 2026-09-21
 
 - **Keep training dummies from breaking** has been added to the `Enemies` tab, right under *Ease Blood Festival*. With it on, the dummies in the training ground and at floor entrances / boss doors no longer shatter from a single hit. Hitting them and the damage meter work exactly as before.
